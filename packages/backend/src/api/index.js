@@ -1,0 +1,1 @@
+export {default as injectPhonesEndpoints} from "./routes/phones";

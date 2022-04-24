@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "Apple iPhone 14,3",
+    "manufacturer": "Foxconn",
+    "description": "Top MY2021 iPhone model features 120 Hz 6.7 inch Super Retina XDR AMOLED display, 3.2 GHz A15 Bionic chip and 6x optical zoom with 12 MP main wide, 12 MP telephoto, 12 MP macro cameras. International dual SIM 6 / 512 GB variant",
+    "color": "Gray",
+    "price": 1599,
+    "imageFileName": "apple.jpg",
+    "screen": "6,7 inch Super Retina XDR",
+    "processor": "Apple A15 Bionic APL1007",
+    "ram": "6144 MiB"
+  },
+  {
+    "id": 1,
+    "name": "Xiaomi Pissarro Pro",
+    "manufacturer": "Foxconn",
+    "description": "Touch sampling rate of 360Hz provides faster touch response and smooth gaming experience",
+    "color": "Black metal",
+    "price": 400,
+    "imageFileName": "xiaomi.jpg",
+    "screen": "6,7 inch Color AM-OLED",
+    "processor": "MediaTek Dimensity 920 ",
+    "ram": "6144 MiB"
+  },
+  {
+    "id": 2,
+    "name": "OnePlus BBK Martini",
+    "manufacturer": "BBK Electronics",
+    "description": "With 50 MP Main Camera with OIS enabled Sony IMX766 Lens, 16 MP Ultra-wide angle camera and 2 MP Macro lens to take best shots and with 16 MP Front Camera to take selfies",
+    "color": "Light teal",
+    "price": 600,
+    "imageFileName": "oneplus.jpg",
+    "screen": "6,6 inch Color AM-OLED",
+    "processor": "Qualcomm Snapdragon 888 5G",
+    "ram": "12288 MiB RAM"
+  },
+  {
+    "id": 3,
+    "name": "Samsung Rainbow R",
+    "manufacturer": "Samsung Electronics",
+    "description": "With an all-day battery and superfast charging, a single, charge gives you more than a full day of power. Single SIM Japanese variant of Galaxy S22 for au by KDDI",
+    "color": "Metal",
+    "price": 799,
+    "imageFileName": "samsung.jpg",
+    "screen": "6,1 inch Color AM-OLED",
+    "processor": "Qualcomm Snapdragon 8",
+    "ram": "8192 MiB RAM"
+  }
+]
