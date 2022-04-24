@@ -9,6 +9,9 @@ function injectPhonesEndpoints(app) {
   app.get("/phone/:id", (req, res) => {
     const id = req.params.id
     const data = PhoneController.findById(id);
+    if(!data){
+      res.status(404).send(`No phone found with id ${id}`)
+    }
     res.json(data);
   });
 }

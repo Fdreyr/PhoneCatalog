@@ -9,9 +9,7 @@ class PhoneController {
   }
 
   static findById(id) {
-    const foundPhone = db.phones.find((phone) => phone.id == id);
-    if (!foundPhone) throw Error(`No phone found wit id: ${id}`);
-    return foundPhone;
+    return db.phones.find((phone) => phone.id == id);
   }
 }
 
