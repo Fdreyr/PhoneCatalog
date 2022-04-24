@@ -7,18 +7,23 @@ import { capitalize } from "lodash";
 import { find } from "../services/phoneServices";
 
 import Loading from "./100-loading";
+import GenericError from "./100-error";
 
 function FormContainer(props) {
   const params = useParams();
 
   const [loading, setLoading] = useState(true);
   const [attributes, setAttributes] = useState();
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     let mounted = true;
     find(params.id).then((attrs) => {
       if (mounted) {
-        setAttributes(attrs);
+        if(attrs)
+          setAttributes(attrs);
+        else
+          setError(true);
         setLoading(false);
       }
     });
@@ -36,7 +41,11 @@ function FormContainer(props) {
   let content;
   if (loading) {
     content = <Loading />;
-  } else {
+  } else if(error){
+    content = <GenericError />
+  }
+  else {
+    console.log(attributes)
     content = <PhoneForm attributes={attributes} handleChange={handleChange} />;
   }
 
